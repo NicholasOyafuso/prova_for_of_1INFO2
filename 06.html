@@ -7,4 +7,23 @@ Em seguida, utilizando for...of, conte quantos nomes na lista possuem menos de 5
 Apresente para o usuário qual o número total de nomes curtos encontrados.
     */
 
+let nomes = ["Ana", "Carlos", "Beatriz", "Ivo", "Fernanda", "Eder"]
+let novoNome = prompt(`informe o nome que desejar`)
+nomes.push(novoNome)
+let numeroName = ""
+
+for(let name of nomes){
+if(name.length < 5 ){
+    numeroName++
+    
+}
+
+
+
+}
+alert(numeroName)
+
+
+
+
 </script>

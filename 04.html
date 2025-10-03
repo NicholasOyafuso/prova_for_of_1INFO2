@@ -7,4 +7,20 @@ Você precisa, baseando-se no conteúdo deste Array, descobrir qual a palavra ma
 Apresente para o usuário qual é a palavra mais longa contida no Array.
     */
 
+let palavras = ['javascript', 'html', 'css', 'desenvolvimento', 'web']
+let nome = prompt(`informe seu nome`).trim()
+palavras.push(nome)
+let longo = []
+
+
+for(let item of palavras){
+longo.push(item.length)
+}
+
+
+let ordem = [...longo].sort((a,b)=> b-a)
+let maior = longo.indexOf(ordem[0])
+alert(palavras[maior]) 
+
+
 </script>

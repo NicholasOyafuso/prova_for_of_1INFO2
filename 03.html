@@ -6,11 +6,21 @@ Peça para o usuário inserir a temperatura do dia anterior (ontem) e também a 
 Ou seja, são duas entradas fornecidas pelos usuários (dois prompts).
 Calcule a média de temperaturas que estão no Array e apresente para o usuário qual foi a média calculada.
     */
-   
-    let temperaturas = [25.5, 27.0, 24.8, 28.1, 29.3, 26.5, 25.9]
-    let ontem = prompt(`informe a temperatura de ontem`)
-    let anteontem = prompt(`informe a temperatura de anteontem`)
-    temperaturas.push(ontem, anteontem)
-    
 
+    let temperaturas = [25.5, 27.0, 24.8, 28.1, 29.3, 26.5, 25.9]
+    let ontem = Number(prompt(`informe a temperatura de ontem`))
+    let anteontem = Number(prompt(`informe a temperatura de anteontem`))
+    temperaturas.push(ontem, anteontem)
+    let temperatura = ""
+
+
+    for (let temp of temperaturas) {
+
+        temperatura += temp
+
+
+
+
+    }
+    alert(temperatura / temperaturas.length)
 </script>
