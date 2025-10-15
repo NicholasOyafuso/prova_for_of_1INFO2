@@ -11,7 +11,7 @@ Calcule a média de temperaturas que estão no Array e apresente para o usuário
     let ontem = Number(prompt(`informe a temperatura de ontem`))
     let anteontem = Number(prompt(`informe a temperatura de anteontem`))
     temperaturas.push(ontem, anteontem)
-    let temperatura = ""
+    let temperatura = 0
 
 
     for (let temp of temperaturas) {
@@ -22,5 +22,5 @@ Calcule a média de temperaturas que estão no Array e apresente para o usuário
 
 
     }
-    alert(temperatura / temperaturas.length)
+    alert((temperatura / temperaturas.length).toFixed(1))
 </script>

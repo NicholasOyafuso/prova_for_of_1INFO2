@@ -7,4 +7,28 @@ Você deve perguntar para o usuário qual a porcentagem de aumento e, então, ca
 Apresente para o usuário, no final do programa, a soma de todos os preços que estão no Array.
     */
 
+    let catalogo = [89.90, 750.00, 1200.50, 40.00]
+    let porcent = Number(prompt(`informe qual a porcentagem de aumento`))
+    let newList = []
+    let finalvalue = 0;
+    for (valores of catalogo) {
+        newList.push(valores + (valores * porcent / 100));
+    }
+
+    for (newValores of newList) {
+        finalValue += newValores
+
+    }
+
+
+
+
+
+
+    alert(finalValue);
+
+
+
+
+
 </script>
